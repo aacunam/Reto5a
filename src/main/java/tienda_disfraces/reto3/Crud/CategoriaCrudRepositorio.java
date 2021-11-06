@@ -1,11 +1,11 @@
 package tienda_disfraces.reto3.Crud;
 
-import tienda_disfraces.reto3.modelo.Categoria;
-
 import org.springframework.data.repository.CrudRepository;
 
+import tienda_disfraces.reto3.modelo.Categoria;
+
 /**
- * @autor Gladys Leticia Ramirez Torres
+ * @author ARMANDO ACUÑA
  */
 public interface CategoriaCrudRepositorio extends CrudRepository <Categoria,Integer> {
     

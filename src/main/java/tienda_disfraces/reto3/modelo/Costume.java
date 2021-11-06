@@ -63,7 +63,7 @@ public class Costume implements Serializable {
     @ManyToOne
     @JoinColumn(name = "categoryId")
     @JsonIgnoreProperties("costumes")
-    private Categoria category;
+    private Categoria category ;
 	
 	/**
      * relacion con cliente

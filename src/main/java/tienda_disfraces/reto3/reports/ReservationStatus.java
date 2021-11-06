@@ -1,6 +1,8 @@
 package tienda_disfraces.reto3.reports;
 
-
+/**
+ * @author ARMANDO ACUÑA
+ */
 public class ReservationStatus {
     private Integer completed;
     private Integer cancelled;

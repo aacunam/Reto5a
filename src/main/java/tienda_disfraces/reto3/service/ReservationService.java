@@ -2,9 +2,10 @@ package tienda_disfraces.reto3.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import tienda_disfraces.reto3.modelo.Reservation;
-import tienda_disfraces.reto3.reports.ReservationStatus;
 import tienda_disfraces.reto3.reports.CountClient;
+import tienda_disfraces.reto3.reports.ReservationStatus;
 import tienda_disfraces.reto3.repositorio.ReservationRepository;
 
 import java.util.List;
@@ -73,20 +74,20 @@ public class ReservationService {
      */
     public Reservation update(Reservation reserva) {
         if (reserva.getIdReservation() != null) {
-            Optional<Reservation> e = reservationRepository.getReservation(reserva.getIdReservation());
+            Optional<Reservation> exx = reservationRepository.getReservation(reserva.getIdReservation());
             // if (!e.isEmpty()) {
 
             if (reserva.getStartDate() != null) {
-                e.get().setStartDate(reserva.getStartDate());
+                exx.get().setStartDate(reserva.getStartDate());
             }
             if (reserva.getDevolutionDate() != null) {
-                e.get().setDevolutionDate(reserva.getDevolutionDate());
+                exx.get().setDevolutionDate(reserva.getDevolutionDate());
             }
             if (reserva.getStatus() != null) {
-                e.get().setStatus(reserva.getStatus());
+                exx.get().setStatus(reserva.getStatus());
             }
-            reservationRepository.save(e.get());
-            return e.get();
+            reservationRepository.save(exx.get());
+            return exx.get();
             /*
              * } else { return reserva; }
              */

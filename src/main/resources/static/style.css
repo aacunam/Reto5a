@@ -67,7 +67,7 @@ html,body{
 	top:50%;
 	left:20px;
 	margin-top:-50px;
-}
+}  
 .witch div:nth-child(1){
 	width:80px;
 	height:3px;
@@ -504,7 +504,7 @@ html,body{
 	-webkit-transform:rotate(65deg) skewX(42deg);
 	    -ms-transform:rotate(65deg) skewX(42deg);
 	        transform:rotate(65deg) skewX(42deg);
-}
+}  
 .css_lab:after{
 	content:"Disfraces el Guasón";
 	display:block;

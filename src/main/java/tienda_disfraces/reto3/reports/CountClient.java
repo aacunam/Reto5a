@@ -1,7 +1,9 @@
 package tienda_disfraces.reto3.reports;
 
 import tienda_disfraces.reto3.modelo.Cliente;
-
+/**
+ * @author ARMANDO ACUÑA
+ */
 public class CountClient {
     private Long total;
     private Cliente client;

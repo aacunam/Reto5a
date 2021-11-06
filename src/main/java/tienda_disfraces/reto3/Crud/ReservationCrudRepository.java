@@ -1,12 +1,16 @@
 package tienda_disfraces.reto3.Crud;
 
-import tienda_disfraces.reto3.modelo.Reservation;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+
+import tienda_disfraces.reto3.modelo.Reservation;
 
 import java.util.Date;
 import java.util.List;
 
+/**
+ * @author ARMANDO ACUÑA
+ */
 public interface ReservationCrudRepository extends CrudRepository <Reservation,Integer>{
     public List<Reservation> findAllByStatus(String status);
     public List<Reservation> findAllByStartDateAfterAndStartDateBefore (Date dateOne,Date dateTwo);

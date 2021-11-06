@@ -5,6 +5,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * @author ARMANDO ACUÑA
+ */
 @Entity
 @Table(name = "reservation")
 public class Reservation implements Serializable {

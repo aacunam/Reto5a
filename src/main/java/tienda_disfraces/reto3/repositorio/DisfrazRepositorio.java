@@ -9,6 +9,10 @@ import org.springframework.stereotype.Repository;
 import tienda_disfraces.reto3.Crud.DisfrazCrudRepositorio;
 import tienda_disfraces.reto3.modelo.Costume;
 
+/**
+ *
+ * @author Armando acuña
+ */
 @Repository
 public class DisfrazRepositorio {
 
